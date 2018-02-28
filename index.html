@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Local weather web app
+    Demonstration project using HTML5, CSS3, Bootstrap, jQuery, JSON, AJAX
+
+    Detects current location and gets current weather and location name information from the openweathermap.org API which
+    is then displayed along with a weather icon. Background image is determined by current weather conditions.
+
+    Mark Allen - Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+<!-- Load font, script, stylesheet, Bootstrap 3 and jQuery 3 -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <title>
+    Your local weather
+  </title>
+</head>
+
+<body class="bg">
+  <div class="container">
+    <div class="row topOffset ">
+      <div class="col-xs-2"></div>
+<!-- Weather information display area -->
+      <div class="col-xs-8 text-center content">
+        <div class="row">
+          <h2>Your local weather</h2>
+        </div>
+        <hr />
+        <div class="row">
+          <h1 id="currentLocation"><em>Current Location</em></h1>
+        </div>
+        <div class="row">
+          <h1 id="currentTemperature"><em>Temperature</em></h1>
+        </div>
+        <div class="row">
+          <h1 id="currentWeather"><em>Current Weather</em></h1>
+        </div>
+        <div class="row">
+          <h1 id="currentWeatherIcon"><em>Weather icon</em></h1>
+        </div>
+        <hr />
+        <div class="row">
+          <h6>To change units between Celsius and Fahrenheit, click on the temperature</h6>
+        </div>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+  </div>
+</body>
+</html>
